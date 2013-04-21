@@ -1,0 +1,88 @@
+.tt_day, .tt_timecol {
+	float: left;
+	width: 18%;
+
+	background-color: #EEE;
+	border-left: 1px solid #CCC;
+	margin-left: -1px;
+	height: 100%;
+}
+
+.tt_timecol {
+	width: 10%;
+	background-color: #DFD;
+	border-left: 0;
+	margin-left: 0;
+}
+
+.tt_lessons, .tt_times {
+	position: relative;
+}
+
+.tt_day > h1, .tt_timecol > h1 {
+	margin: 0;
+	text-align: center;
+	//border-bottom: 1px solid;
+	font-size: 16px;
+}
+
+.tt_lesson, .tt_times > time {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid;
+}
+.tt_lesson {
+	box-sizing: border-box;
+
+	background-color: #DDF;
+	padding: 3px;
+	margin: 0 3px;
+	margin-right: 4px;
+	border: 1px solid #000;
+
+	//min-height: 50px;
+}
+
+.tt_times time {
+	text-align: right;
+	padding: 3px 6px;
+}
+
+.tt_lesson > time.from, .tt_lesson > time.to {
+	display: none;
+}
+
+.tt_lesson > h2 {
+	margin: 0;
+	line-height: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	position: absolute;
+	top: 3px;
+	color: #666;
+}
+
+.tt_lesson > .location {
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 3px;
+	font-style: italic;
+	font-weight: bold;
+	text-shadow: 
+	0 -1px 1px #FFF,
+	-1px 0 1px #FFF,
+	0 1px 1px #FFF,
+	1px 0 1px #FFF;
+}
+
+
+.tt_timesep {
+	margin: 0;
+}
+
